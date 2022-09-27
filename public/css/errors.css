@@ -1,0 +1,124 @@
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #page-error {
+            position: relative;
+            height: 100vh;
+        }
+        
+        #page-error .page-error {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .page-error {
+            max-width: 520px;
+            width: 100%;
+            line-height: 1.4;
+            text-align: center;
+        }
+        
+        .page-error .page-error-error {
+            position: relative;
+            height: 240px;
+        }
+        
+        .page-error .page-error-error h1 {
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 252px;
+            font-weight: 900;
+            margin: 0px;
+            color: #262626;
+            text-transform: uppercase;
+            letter-spacing: -40px;
+            margin-left: -20px;
+        }
+        
+        .page-error .page-error-error h1>span {
+            text-shadow: -8px 0px 0px #fff;
+        }
+        
+        .page-error .page-error-error h3 {
+            font-family: 'Cabin', sans-serif;
+            position: relative;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #262626;
+            margin: 0px;
+            letter-spacing: 3px;
+            padding-left: 6px;
+        }
+        
+        .page-error h2 {
+            font-family: 'Cabin', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #000;
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .page-error .page-error-error {
+                height: 200px;
+            }
+            .page-error .page-error-error h1 {
+                font-size: 200px;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .page-error .page-error-error {
+                height: 162px;
+            }
+            .page-error .page-error-error h1 {
+                font-size: 162px;
+                height: 150px;
+                line-height: 162px;
+            }
+            .page-error h2 {
+                font-size: 16px;
+            }
+        }
+        
+        .btn-back {
+            background-color: rgb(19, 20, 27);
+            color: #fafafa;
+            font-size: 1.3em;
+            padding: 10px 20px;
+            margin: 10px auto;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            text-decoration: none;
+        }
+        
+        .btn-back:hover {
+            background-color: rgb(35, 35, 39);
+        }
