@@ -78,11 +78,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+<link rel="stylesheet" href="{{ asset('plugins/toastr/toastr.min.css') }}">
 @endsection
 @section('scripts_permanent')
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('js/adminlte.min.js') }}"></script>
+<script src="{{ asset('plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+<script src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
 @endsection
 
 {{-- ---------------------------------------------- --}}
@@ -97,7 +100,7 @@ MoreForTech
 
 {{-- [CONF] Copyright Section in footer --}}
 @section('copyright')
-Copyright &copy; 2022 <a href="https://morefortech.com">MoreForTech</a>.
+Copyright &copy; 2022 - {{ date('Y') }}<a href="https://morefortech.com">MoreForTech</a>.
 @endsection
 
 {{-- [CONF] App Logo found at the very top of the side nav --}}

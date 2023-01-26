@@ -5,7 +5,7 @@
     <meta name="author" content="@yield('meta_author')">
     <meta name="description" content="@yield('meta_description')">
 
-    <title>@yield('title') | @yield('app_name')</title>
+    <title>@yield('app_name')</title>
         @yield('styles_permanent')
         @yield('styles')
   </head>
